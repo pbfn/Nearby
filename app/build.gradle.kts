@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.pedrobruno.nearby"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.pedrobruno.nearby"

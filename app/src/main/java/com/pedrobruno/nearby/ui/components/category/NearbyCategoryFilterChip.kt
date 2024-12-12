@@ -15,6 +15,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pedrobruno.nearby.data.model.Category
+import com.pedrobruno.nearby.ui.theme.Gray300
 import com.pedrobruno.nearby.ui.theme.Gray400
 import com.pedrobruno.nearby.ui.theme.GreenBase
 import com.pedrobruno.nearby.ui.theme.Typography
@@ -47,6 +48,10 @@ fun NearbyCategoryFilterChip(
             }
         },
         border = FilterChipDefaults.filterChipBorder(
+            enabled = false,
+            selected = isSelected,
+            disabledBorderColor = Gray300,
+            borderWidth = 1.dp,
             selectedBorderWidth = 0.dp,
             selectedBorderColor = Color.Transparent
         ),
